@@ -411,24 +411,24 @@ exports.getSingleMovie = async (req, res) => {
       language,
       type,
       releaseDate,
-      cast: cast.map((c) => ({
-        id: c._id,
-        profile: {
-          id: c.actor._id,
-          name: c.actor.name,
-          avatar: c.actor?.avatar?.url,
-        },
-        leadActor: c.leadActor,
-        roleAs: c.roleAs,
-      })),
-      writers: writers?.map((w) => ({
-        id: w._id,
-        name: w.name,
-      })),
-      director: {
-        id: director._id,
-        name: director.name,
-      },
+//       cast: cast.map((c) => ({
+//         id: c._id,
+//         profile: {
+//           id: c.actor._id,
+//           name: c.actor.name,
+//           avatar: c.actor?.avatar?.url,
+//         },
+//         leadActor: c.leadActor,
+//         roleAs: c.roleAs,
+//       })),
+//       writers: writers?.map((w) => ({
+//         id: w._id,
+//         name: w.name,
+//       })),
+//       director: {
+//         id: director._id,
+//         name: director.name,
+//       },
       reviews: { ...reviews },
       poster: poster?.url,
       trailer: trailer?.url,
